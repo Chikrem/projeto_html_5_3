@@ -6,3 +6,45 @@ hr {
     background-color: var(--branco);
     padding: 1em;
 }
+
+.lista-rodapé{
+    display: none;
+}
+
+/* Ajuste tela de Tablet a partir de 1024px largura */
+
+@media screen and (min-width: 1024px){
+
+    .rodapé{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lista-rodapé{
+        display: block;
+    }
+
+    .lista-rodapé__item{
+        display: flex;
+        align-items: center;
+        margin-top: 0.5em;
+    }
+
+    .lista-rodapé__link{
+        text-decoration: none;
+        color: var(--cinza);
+        margin-left: 1em;
+        font-size: 14px;
+    }
+
+    .lista-rodapé__titulo{
+        font-size: 14px;
+        color: var(--cinza);
+    }
+
+    .rodapé__titulo{
+        font-size: 24px;
+        color: var(--cinza);
+    }
+
+}

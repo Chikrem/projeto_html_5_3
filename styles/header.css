@@ -59,3 +59,87 @@
 .container__botao {
     display: none;
 }
+
+.container__titulo{
+    display: none;
+}
+
+.opções{
+    display: none;
+}
+
+/* Ajuste tela de Tablet a partir de 1024px largura */
+
+@media screen and (min-width: 1024px){
+
+    .container__titulo, .container__titulo--negrito{
+        font-family: var(--fonte-secudaria);
+        color: var(--preto);
+        font-size: 30px;
+        display: inline-block;
+    }
+    
+    .container__titulo{
+        font-weight: 400;
+    }
+    
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+
+
+    .cabeçalho__menu-hamburguer{
+        display: none;
+    }
+
+    .opções{
+        display: flex;
+        text-transform: uppercase;
+        text-decoration: none;
+        align-items: center
+    }
+
+    .opções__botão{
+        display: none;
+    }
+
+
+    .opções__item{
+        padding: 1em;
+    }
+
+    .opções__link{
+        color: var(--preto);
+        text-decoration: none;
+    }
+
+    .container__imagem--transparente{
+        display: none;
+    }
+
+    .opções__botão:checked~.lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    /* Mudar a cor do container ao click */
+
+    .opções__botão:checked ~ .label-for-menu > .opções__item {
+        background-color: var(--azul); /* Essa cor de fundo, é um azul que você pode trocar por outra cor de sua preferencia */
+        color: var(--branco); /* Eu coloquei branco para dar um contraste com o fundo, mas use a cor que quiser */
+        padding: 1.7em 1em;
+    }
+
+    .lista-menu__item:hover {
+        background-color: var(--azul); /* O mesmo que ali em cima, troque pela cor que sentir melhor */
+    }
+
+    .lista-menu__item:hover .lista-menu__link {
+        -webkit-background-clip: inherit;
+        -webkit-text-fill-color: inherit;
+        background-clip: inherit;
+        text-decoration: none;
+        color: var(--branco); /* Branco novamente, mas use uma cor que lhe agrade */
+        background: none;
+    }
+}
