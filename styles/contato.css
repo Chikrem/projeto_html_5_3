@@ -60,3 +60,21 @@
     }
 
 }
+
+
+
+/* Ajuste tela de Tablet a partir de 1728px largura */
+
+@media screen and (min-width: 1728px){
+
+    .contato{
+        padding: 3em 20vw;
+    }
+
+
+
+
+
+
+
+}

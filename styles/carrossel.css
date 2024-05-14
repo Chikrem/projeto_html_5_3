@@ -107,3 +107,52 @@
     }
 
 }
+
+
+
+/* Ajuste tela de Tablet a partir de 1728px largura */
+
+@media screen and (min-width: 1728px){
+
+    .carrossel__container{
+        display: flex;
+        margin: 0 15vw 0 15vw;
+        align-items: center;
+    }
+
+    .swiper-pagination{
+        margin: 1em 0;
+    }
+
+    .swiper{
+        width: 50%;
+    }
+
+    .descrição__titulo{
+        font-size: 2rem;
+    }
+
+    .descrição__texto{
+        font-size: 1rem;
+    }
+
+    .descrição{
+        margin-right: 2em;
+    }
+
+    .card{
+        width: 60%;
+        height: 60%;
+        margin: 0;
+        margin-left: 3em;
+    }
+
+}
+
+
+
+
+
+
+
+
